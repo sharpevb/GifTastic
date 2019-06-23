@@ -1,7 +1,7 @@
 $("button").on("click", function() {
 var animal = $(this).attr("data-animal");
 
-var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=JRcxsQnkDertgsjaSuehdzHxlznU528v";
+var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=JRcxsQnkDertgsjaSuehdzHxlznU528v&limit=10";
 
 $.ajax( {
     url: queryURL,
