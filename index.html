@@ -6,25 +6,36 @@
     <meta charset="utf-8">
     <title>GIPHY</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
 </head>
 
 
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div id="buttons">
+                    <button class="btn" data-animal="duck">Quack</button>
+                    <button class="btn" data-animal="cow">Moo</button>
+                    <button class="btn" data-animal="pig">Oink</button>
+                    <button class="btn" data-animal="turkey">Gobble</button>
+                    <div id="gifs-here"></div>
+                </div>
+            </div>
 
-    <button data-animal="duck" >Quack</button>
-    <button data-animal="cow" data-state="animate">Moo</button>
-    <button data-animal="pig" data-state="animate">Oink</button>
-    <button data-animal="turkey" data-state="animate">Gobble</button>
+            <div class="row">
+                <div class="col-lg-5">
+                    <form id="gif-form">
+                        <label for="gif-input">Add an animal</label>
+                        <input type="text" id="gif-input">
+                        <input class="btn" id="add-gif" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
 
-    <div id="gifs-here">
-
+        </div>
     </div>
-
-
-
-
-
-
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
